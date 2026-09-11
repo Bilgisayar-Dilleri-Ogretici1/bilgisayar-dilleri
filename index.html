@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglisayar Dilleri</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            text-align: center;
+        }
+        .GirisButonu {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        #IcerikAlani {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💻 Biglisayar Dilleri 💻</h1>
+    <br><br>
+
+    <button class="GirisButonu" onclick="SitemiAc()">Öğrenmeye Başla!</button>
+
+    <div id="IcerikAlani">
+        <h3>Bilgisayar Dillerini Merak Mı Ediyorsun? Hadi O Zaman Başlıyalım:</h3>
+        <p>Bilgisayarlar bizim dilimizi anlamazlar. Onlarla konuşmak için özel diller kullanırız. İşte en popüler olanlar:</p>
+        
+        <h2>🚀 1. Python</h2>
+        <p>Yapay zeka, oyunlar ve robotlar yapmak için kullanılan, yazımı en kolay dillerden biridir. Tıpkı İngilizce konuşur gibi kod yazarsın!</p>
+
+        <h2>⚡ 2. JavaScript</h2>
+        <p>Web sitelerini canlandıran dildir. İnternette gördüğün bütün hareketli butonlar, oyunlar ve animasyonlar JavaScript ile yapılır.</p>
+
+        <h2>🎨 3. HTML</h2>
+        <p>Aslında bir programlama dili değil, web sitelerinin iskeletidir. Sitenin neresinde yazı, neresinde resim olacağını HTML belirler.</p>
+    </div>
+
+    <script>
+        function SitemiAc() {
+            document.getElementById("IcerikAlani").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
